@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div class="container main" style="margin-top: 4rem;">
+    {% for image in uploads %}
+        <a href="galeri/{{ image }}" style="width: 33%; padding: 0.3rem 0.2rem; height: 250px; flex-wrap: nowrap; display: flex;">
+            <img src="../static/uploads/{{ image }}" alt="" class="w-100">
+        </a>
+    {% endfor %}
+</div>
+
+{% endblock %}

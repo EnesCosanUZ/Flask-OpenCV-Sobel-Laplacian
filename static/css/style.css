@@ -1,0 +1,29 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 9rem;
+}
+
+.photo-cover {
+    height: 30rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;   
+}
+
+.gallery-cover {
+    height: 30rem;
+    width: 60%;
+    display: flex;
+}
+
+.galeri > img {
+    max-width: 250px;
+    width: 33%;
+    padding: 0.3rem 0.2rem;
+}
+
+.detay {
+    width: 33%;
+    padding: 0.3rem 0.2rem;
+}

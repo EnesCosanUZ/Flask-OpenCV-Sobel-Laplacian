@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div class="container main d-flex flex-row" style="margin-top: 4rem;">
+    <div class="container detay">
+        <h2 class="text-center">Original</h2>
+        <img src="../static/uploads/{{ image }}" alt="" class="w-100">
+    </div>
+    <div class="container detay">
+        <h2 class="text-center">Laplacian</h2>
+        <img src="../static/laplacian/{{ image }}" alt="" class="w-100">
+    </div>
+</div>
+<div class="container d-flex flex-row">
+    <div class="container detay">
+        <h2 class="text-center">Sobel-X</h2>
+        <img src="../static/sobelx/{{ image }}" alt="" class="w-100">
+    </div>
+    <div class="container detay">
+        <h2 class="text-center">Sobel-Y</h2>
+        <img src="../static/sobely/{{ image }}" alt="" class="w-100">
+    </div>
+</div>
+
+{% endblock %}

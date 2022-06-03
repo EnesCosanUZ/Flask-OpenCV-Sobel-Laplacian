@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div class="container main">
+    <div class="photo-cover">
+        <form method="post" class="mx-auto p-4" enctype="multipart/form-data">
+            <input type="file" name="file" id="file" accept="image/png, image/jpeg" class="form-control" required onchange="resim()">
+            <input type="submit" value="Ekle" class="form-control">
+        </form>
+        <img class="mx-auto w-75 mh-75" src="" alt="">
+    </div>
+    
+    <div class="gallery-cover text-center">
+        <div class="container">
+            <h3 class="silent">Son Yüklenenler</h3>
+            <div class="galeri">
+                {% for image in uploads %}
+                    <a href="galeri/{{ image }}">
+                        <img src="../static/uploads/{{ image }}" alt="">
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
