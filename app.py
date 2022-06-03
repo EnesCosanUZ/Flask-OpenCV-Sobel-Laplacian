@@ -50,4 +50,4 @@ def galeri():
 def upload(filename):
     return render_template('detail.html', title=filename, image=filename)
 
-app.run(debug=True)
+app.run()
